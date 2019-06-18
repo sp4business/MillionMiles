@@ -1,9 +1,73 @@
 <ion-header>
-  <ion-toolbar>
+ <!--  <ion-toolbar>
     <ion-title>
       Tab Three
     </ion-title>
-  </ion-toolbar>
+  </ion-toolbar> -->
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+	<div class = "car-descrip">
+		<h1>Honda Insight</h1>
+		<ion-grid>
+			<ion-row>
+				<ion-col>Last checked: <b>4 hrs ago</b></ion-col>
+				<ion-col>Next Auto Check: <b>In 8hrs</b></ion-col>
+			</ion-row>
+		</ion-grid>
+		<img src = "../assets/images/honda-insight.png">
+		<ion-button>run diagnostic</ion-button>
+	</div>
+	<div>
+		<ion-list>
+			<ion-item>
+				<ion-grid>
+					<ion-row>
+						<ion-col size = "2"><ion-icon name="heart-empty"></ion-icon></ion-col>
+						<ion-col>Engine health <br>high severity - 3 medium severity - 2</ion-col>
+					</ion-row>
+				</ion-grid>
+			</ion-item>
+			<ion-item>
+				<ion-grid>
+					<ion-row>
+						<ion-col size = "2"><ion-icon name="rocket"></ion-icon></ion-col>
+						<ion-col>RPM <br>medium severity - 2</ion-col>
+					</ion-row>
+				</ion-grid>
+			</ion-item>
+			<ion-item>
+				<ion-grid>
+					<ion-row>
+						<ion-col size = "2"><ion-icon name="bonfire"></ion-icon></ion-col>
+						<ion-col>Oil Health<br>low severity - 1</ion-col>
+					</ion-row>
+				</ion-grid>
+			</ion-item>
+			<ion-item>
+				<ion-grid>
+					<ion-row>
+						<ion-col size = "2"><ion-icon name="fitness"></ion-icon></ion-col>
+						<ion-col>Performance <br>low severity - 3</ion-col>
+					</ion-row>
+				</ion-grid>
+			</ion-item>
+			<ion-item>
+				<ion-grid>
+					<ion-row>
+						<ion-col size = "2"><ion-icon name="phone-portrait"></ion-icon></ion-col>
+						<ion-col>Electronics <br>2 medium severity </ion-col>
+					</ion-row>
+				</ion-grid>
+			</ion-item>
+			<ion-item>
+				<ion-grid>
+					<ion-row>
+						<ion-col size = "2"><ion-icon name="pause"></ion-icon></ion-col>
+						<ion-col>Controls <br>high severity - 1</ion-col>
+					</ion-row>
+				</ion-grid>
+			</ion-item>
+		</ion-list>
+	</div>
+</ion-content>
