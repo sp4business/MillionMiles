@@ -4,6 +4,7 @@ import { ObdBenefitComponent } from '../obd-benefit/obd-benefit.component';
 import { ObdContactComponent } from '../obd-contact/obd-contact.component';
 import { ObdInstallComponent } from '../obd-install/obd-install.component';
 import { ObdLocateComponent } from '../obd-locate/obd-locate.component';
+import { ObdSettingComponent } from '../obd-setting/obd-setting.component';
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -45,4 +46,11 @@ export class Tab1Page {
   	return await benefitModal.present();
   }
 
+    async presentObdSetting() {
+  	const benefitModal = await this.modalCtrl.create({
+  		component: ObdSettingComponent,
+  		componentProps: {test: 123}
+  	});
+  	return await benefitModal.present();
+  }
 }
