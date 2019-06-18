@@ -9,8 +9,12 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { ObdBenefitComponent } from './obd-benefit/obd-benefit.component'
+import { ObdContactComponent } from './obd-contact/obd-contact.component';
+import { ObdInstallComponent } from './obd-install/obd-install.component';
+import { ObdLocateComponent } from './obd-locate/obd-locate.component';
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,ObdBenefitComponent,ObdContactComponent,ObdInstallComponent,ObdLocateComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
@@ -18,6 +22,6 @@ import { AppComponent } from './app.component';
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, ObdBenefitComponent,ObdContactComponent,ObdInstallComponent,ObdLocateComponent]
 })
 export class AppModule {}
