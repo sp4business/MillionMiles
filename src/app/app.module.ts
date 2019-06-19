@@ -20,11 +20,12 @@ import { OilHealthComponent} from './oil-health/oil-health.component';
 import { ElectronicsComponent} from './electronics/electronics.component';
 import { ControlsComponent} from './controls/controls.component';
 import {PerformanceComponent} from './performance/performance.component';
+import {DiagnosticComponent} from './diagnostic/diagnostic.component'
 @NgModule({
   declarations: [AppComponent,ObdBenefitComponent,ObdContactComponent,ObdInstallComponent,ObdLocateComponent, 
     ObdSettingComponent, EngineHealthComponent, RpmComponent, OilHealthComponent, ElectronicsComponent,
     PerformanceComponent,
-    ControlsComponent],
+    ControlsComponent, DiagnosticComponent],
 
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
@@ -36,7 +37,7 @@ import {PerformanceComponent} from './performance/performance.component';
 
   bootstrap: [AppComponent, ObdBenefitComponent,ObdContactComponent,ObdInstallComponent,ObdLocateComponent, 
     ObdSettingComponent, EngineHealthComponent, RpmComponent, OilHealthComponent, ElectronicsComponent,
-    ControlsComponent,PerformanceComponent]
+    ControlsComponent,PerformanceComponent, DiagnosticComponent]
 
 })
 export class AppModule {}
