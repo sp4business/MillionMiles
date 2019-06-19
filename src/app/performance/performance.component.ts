@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {ModalController} from '@ionic/angular'
 @Component({
   selector: 'app-performance',
   templateUrl: './performance.component.html',
@@ -7,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerformanceComponent implements OnInit {
 
-  constructor() { }
+  constructor(public modalCtrl: ModalController) { }
 
   ngOnInit() {}
+
+
+  
+   dismiss(){
+  		this.modalCtrl.dismiss();
+  	}
 
 }
