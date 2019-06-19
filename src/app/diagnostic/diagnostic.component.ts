@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-diagnostic',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiagnosticComponent implements OnInit {
 
-  constructor() { }
+  constructor(public modalCtrl: ModalController) { }
 
   ngOnInit() {}
+
+  dismiss(){
+    this.modalCtrl.dismiss();
+  } 
 
 }

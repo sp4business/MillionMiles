@@ -6,19 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-  item: String;
   dataSet: any;
   constructor() {
-    this.item = "item stuff"
-    this.dataSet = [{oil:"cat",
-                    date: "july"
-  },{oil:"cat",
-  date: "july"
-},{oil:"cat",
-date: "july"
-},{oil:"cat",
-date: "july"
-}]
+    this.dataSet = [{
+      oil: "cat",
+      date: "july"
+    }, {
+      oil: "cat",
+      date: "july"
+    }, {
+      oil: "cat",
+      date: "july"
+    }, {
+      oil: "cat",
+      date: "july"
+    }]
   }
 
 
