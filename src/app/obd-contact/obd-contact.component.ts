@@ -12,7 +12,7 @@ export class ObdContactComponent implements OnInit {
   ngOnInit() {}
 
 
-   dismiss(){
-  		this.modalCtrl.dismiss();
-  	}
+  dismiss(){
+    this.modalCtrl.dismiss();
+  } 
 }
