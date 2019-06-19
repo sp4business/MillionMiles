@@ -1,4 +1,10 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { EngineHealthComponent} from '../engine-health/engine-health.component';
+import { RpmComponent} from '../rpm/rpm.component';
+import { OilHealthComponent} from '../oil-health/oil-health.component';
+import { ElectronicsComponent} from '../electronics/electronics.component';
+import { ControlsComponent} from '../controls/controls.component';
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +13,46 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  constructor(public modalCtrl: ModalController) {}
 
+
+  async presentEngineHealth() {
+    const entineHealthModal = await this.modalCtrl.create({
+      component: EngineHealthComponent,
+      componentProps: {test: 123},
+    });
+    return await entineHealthModal.present();
+  }
+
+  async presentRPM() {
+    const rpmModal = await this.modalCtrl.create({
+      component: RpmComponent,
+      componentProps: {test: 123},
+    });
+    return await rpmModal.present();
+  }
+
+  async presentOil() {
+    const oilModal = await this.modalCtrl.create({
+      component: OilHealthComponent,
+      componentProps: {test: 123},
+    });
+    return await oilModal.present();
+  }
+
+  async presentElectronics() {
+    const electronicsModal = await this.modalCtrl.create({
+      component: ElectronicsComponent,
+      componentProps: {test: 123},
+    });
+    return await electronicsModal.present();
+  }
+
+  async presentControls() {
+    const controlsModal = await this.modalCtrl.create({
+      component: ControlsComponent,
+      componentProps: {test: 123},
+    });
+    return await controlsModal.present();
+  }
 }
