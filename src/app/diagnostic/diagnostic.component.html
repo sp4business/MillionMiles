@@ -1,16 +1,54 @@
 <ion-header>
   <ion-toolbar>
-    <ion-button color="medium"  icon-only (click) = "dismiss()" >Back</ion-button>
+    <ion-button color="medium" icon-only (click)="dismiss()">Back</ion-button>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-    <ion-item>
-        <ion-label>Location of Service</ion-label>
-        <ion-select okText="Confirm">
-          <ion-select-option value="Pep Boys">Pep Boys</ion-select-option>
-          <ion-select-option value="Fire Stone">Fire Stone</ion-select-option>
-          <ion-select-option value="Fire Stone">Team Toyota</ion-select-option>
-        </ion-select>
-      </ion-item>
-</ion-content>
+  <ion-item>
+    <ion-label>Location of Service</ion-label>
+    <ion-select okText="Confirm">
+      <ion-select-option value="Pep Boys">Pep Boys</ion-select-option>
+      <ion-select-option value="Fire Stone">Fire Stone</ion-select-option>
+      <ion-select-option value="Team Toyota">Team Toyota</ion-select-option>
+    </ion-select>
+  </ion-item>
 
+  <ion-list>
+    <ion-radio-group>
+      <ion-list-header>
+        <ion-label>Select Diagnostics</ion-label>
+      </ion-list-header>
+
+      <ion-item no-padding>
+        <ion-label>Location</ion-label>
+        <ion-radio slot="start" value="buford"></ion-radio>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-label>Coolant Health</ion-label>
+        <ion-radio slot="start" value="buford"></ion-radio>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-label>RPM Usage</ion-label>
+        <ion-radio slot="start" value="buford"></ion-radio>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-label>Engine Load</ion-label>
+        <ion-radio slot="start" value="buford"></ion-radio>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-label>Fuel Health</ion-label>
+        <ion-radio slot="start" value="buford"></ion-radio>
+      </ion-item>
+
+    </ion-radio-group>
+  </ion-list>
+  <div class="buttonClass">
+    <ion-button (click)="presentToast()" text-center color="medium" size="large">Submit</ion-button>
+  </div>
+
+
+</ion-content>

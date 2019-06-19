@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { ModalController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-diagnostic',
@@ -8,12 +8,24 @@ import { ModalController } from '@ionic/angular';
 })
 export class DiagnosticComponent implements OnInit {
 
-  constructor(public modalCtrl: ModalController) { }
+  constructor(public modalCtrl: ModalController, public toastController: ToastController) { }
 
   ngOnInit() {}
 
-  dismiss(){
+  dismiss() {
     this.modalCtrl.dismiss();
   } 
+
+  async presentToast() {
+    const toast = await this.toastController.create({
+      //header: 'Toast Header',
+      message: 'Diagnostics Delivered',
+      duration: 2000,
+      position: 'bottom'
+    });
+    this.modalCtrl.dismiss();
+    toast.present();
+    
+  }
 
 }
