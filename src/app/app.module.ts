@@ -14,8 +14,9 @@ import { ObdContactComponent } from './obd-contact/obd-contact.component';
 import { ObdInstallComponent } from './obd-install/obd-install.component';
 import { ObdLocateComponent } from './obd-locate/obd-locate.component';
 import { ObdSettingComponent } from './obd-setting/obd-setting.component';
+import {PerformanceComponent} from './performance/performance.component';
 @NgModule({
-  declarations: [AppComponent,ObdBenefitComponent,ObdContactComponent,ObdInstallComponent,ObdLocateComponent, ObdSettingComponent],
+  declarations: [AppComponent,ObdBenefitComponent,ObdContactComponent,ObdInstallComponent,ObdLocateComponent, ObdSettingComponent,PerformanceComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
@@ -23,6 +24,6 @@ import { ObdSettingComponent } from './obd-setting/obd-setting.component';
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
-  bootstrap: [AppComponent, ObdBenefitComponent,ObdContactComponent,ObdInstallComponent,ObdLocateComponent, ObdSettingComponent]
+  bootstrap: [AppComponent, ObdBenefitComponent,ObdContactComponent,ObdInstallComponent,ObdLocateComponent, ObdSettingComponent,PerformanceComponent]
 })
 export class AppModule {}
