@@ -7,5 +7,21 @@
 </ion-header>
 
 <ion-content>
-  
+  <ion-grid> 
+    <ion-row  *ngFor = "let item of dataSet" >
+      <ion-col>
+      <ion-item>{{item.oil}} </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+        {{item.date}}
+      </ion-item>
+      </ion-col>
+    </ion-row> 
+  </ion-grid>
+
 </ion-content>
+
+
+//ionlist 
+

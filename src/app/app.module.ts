@@ -19,11 +19,13 @@ import { RpmComponent} from './rpm/rpm.component';
 import { OilHealthComponent} from './oil-health/oil-health.component';
 import { ElectronicsComponent} from './electronics/electronics.component';
 import { ControlsComponent} from './controls/controls.component';
-
+import {PerformanceComponent} from './performance/performance.component';
 @NgModule({
   declarations: [AppComponent,ObdBenefitComponent,ObdContactComponent,ObdInstallComponent,ObdLocateComponent, 
     ObdSettingComponent, EngineHealthComponent, RpmComponent, OilHealthComponent, ElectronicsComponent,
+    PerformanceComponent,
     ControlsComponent],
+
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
@@ -31,8 +33,10 @@ import { ControlsComponent} from './controls/controls.component';
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
+
   bootstrap: [AppComponent, ObdBenefitComponent,ObdContactComponent,ObdInstallComponent,ObdLocateComponent, 
     ObdSettingComponent, EngineHealthComponent, RpmComponent, OilHealthComponent, ElectronicsComponent,
-    ControlsComponent]
+    ControlsComponent,PerformanceComponent]
+
 })
 export class AppModule {}

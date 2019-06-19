@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+
 import { ModalController } from '@ionic/angular';
 import { EngineHealthComponent} from '../engine-health/engine-health.component';
 import { RpmComponent} from '../rpm/rpm.component';
 import { OilHealthComponent} from '../oil-health/oil-health.component';
 import { ElectronicsComponent} from '../electronics/electronics.component';
 import { ControlsComponent} from '../controls/controls.component';
+import {PerformanceComponent} from '../performance/performance.component';
 
 @Component({
   selector: 'app-tab3',
@@ -54,5 +56,13 @@ export class Tab3Page {
       componentProps: {test: 123},
     });
     return await controlsModal.present();
+  }
+  async presentPerformance() {
+  	const benefitModal = await this.modalCtrl.create({
+  		component: PerformanceComponent,
+  		componentProps: {test: 123},
+  	});
+  	return await benefitModal.present();
+
   }
 }
