@@ -1,13 +1,37 @@
 <ion-header>
-  <ion-toolbar>
-  <ion-button icon-only (click) = "dismiss()">
-  	<ion-icon name = "arrow-back"></ion-icon>
-  </ion-button>
-    <ion-title>
-      Locate your OBD port
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content>
-	stuff goes here
-</ion-content>
+    <ion-toolbar>
+    <ion-button icon-only (click) = "dismiss()">
+      <ion-icon name = "arrow-back"></ion-icon>
+    </ion-button>
+      <ion-title>
+        Enter Your Car Information
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-label>Car Make</ion-label>
+            <ion-select placeholder="Select One">
+              <ion-select-option value="Toyota">Toyota</ion-select-option>
+              <ion-select-option value="Honda">Honda</ion-select-option>
+            </ion-select>
+          </ion-item>
+      <ion-item>
+          <ion-label>Car Model</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Year</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>Transmission Type</ion-label>
+              <ion-select placeholder="Select One">
+                <ion-select-option value="Manuel">Manuel</ion-select-option>
+                <ion-select-option value="Auto">Automatic</ion-select-option>
+              </ion-select>
+            </ion-item>
+    </ion-list>
+    
+  </ion-content>
