@@ -16,7 +16,9 @@ import {PerformanceComponent} from '../performance/performance.component';
 export class Tab3Page {
 
   constructor(public modalCtrl: ModalController) {}
-
+  showDiag = true;
+  showSpin = false;
+  showFix = false;
 
   async presentEngineHealth() {
     const entineHealthModal = await this.modalCtrl.create({
@@ -63,6 +65,15 @@ export class Tab3Page {
   		componentProps: {test: 123},
   	});
   	return await benefitModal.present();
+  }
 
+  launchFix(){
+  	this.showDiag = false
+  	this.showSpin = true
+  	setTimeout( () => {
+  		this.showDiag = true
+  		this.showFix = true
+  		this.showSpin = false
+  	}, 3000)
   }
 }

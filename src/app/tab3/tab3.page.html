@@ -15,10 +15,16 @@
 			</ion-row>
 		</ion-grid>
 		<img src = "../assets/images/honda-insight.png">
-		<ion-button>run diagnostic</ion-button>
+		<ion-grid>
+			<ion-row>
+				<ion-col *ngIf = "showDiag"><ion-button (click) = "launchFix()">run diagnostic</ion-button></ion-col>
+				<ion-col *ngIf = "showSpin"><ion-spinner></ion-spinner></ion-col>
+<!-- 				<ion-col *ngIf = "showFix"><ion-button>fix them now</ion-button></ion-col> -->
+			</ion-row>
+		</ion-grid>
 	</div>
 	<div>
-		<ion-list>
+		<ion-list *ngIf = "showFix">
 			<ion-item>
 				<ion-grid>
 					<ion-row (click) = "presentEngineHealth()">
