@@ -17,6 +17,16 @@ mwl-gauge > .gauge > .dial {
 
 }
 
+mwl-gauge {
+
+  width: 275px;
+  height: 275px;
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+
+}
+
 mwl-gauge > .gauge > .value {
 
   stroke: rgb(234,255,47);

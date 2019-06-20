@@ -11,7 +11,6 @@
 		<ion-grid>
 			<ion-row>
 				<ion-col>Last checked: <b>2 Days Ago</b></ion-col>
-				<ion-col>Next Auto Check: <b>In 20 Days</b></ion-col>
 			</ion-row>
 		</ion-grid>
 		
@@ -23,11 +22,9 @@
 	</mwl-gauge>
 	<img src = "../../assets/images/bmw.jpg" *ngIf = "!showFix">
 		<ion-grid>
-			<ion-row>
 				<ion-col *ngIf = "showDiag"><ion-button (click) = "launchFix()">run diagnostic</ion-button></ion-col>
 				<ion-col *ngIf = "showSpin"><ion-spinner></ion-spinner></ion-col>
 <!-- 				<ion-col *ngIf = "showFix"><ion-button>fix them now</ion-button></ion-col> -->
-			</ion-row>
 		</ion-grid>
 	</div>
 	<div>
