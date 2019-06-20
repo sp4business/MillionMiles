@@ -21,13 +21,13 @@ import { ElectronicsComponent} from './electronics/electronics.component';
 import { ControlsComponent} from './controls/controls.component';
 import {PerformanceComponent} from './performance/performance.component';
 import {DiagnosticComponent} from './diagnostic/diagnostic.component'
+import {AutoServiceLocationComponent} from './auto-service-location/auto-service-location.component'
 import {FilesComponent} from './files/files.component'
 @NgModule({
   declarations: [AppComponent,ObdBenefitComponent,ObdContactComponent,ObdInstallComponent,ObdLocateComponent, 
     ObdSettingComponent, EngineHealthComponent, RpmComponent, OilHealthComponent, ElectronicsComponent,
     PerformanceComponent,
-    ControlsComponent, DiagnosticComponent, FilesComponent],
-
+    ControlsComponent, DiagnosticComponent, AutoServiceLocationComponent, FilesComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
@@ -38,7 +38,7 @@ import {FilesComponent} from './files/files.component'
 
   bootstrap: [AppComponent, ObdBenefitComponent,ObdContactComponent,ObdInstallComponent,ObdLocateComponent, 
     ObdSettingComponent, EngineHealthComponent, RpmComponent, OilHealthComponent, ElectronicsComponent,
-    ControlsComponent,PerformanceComponent, DiagnosticComponent, FilesComponent]
+    ControlsComponent,PerformanceComponent, DiagnosticComponent, AutoServiceLocationComponent,FilesComponent]
 
 })
 export class AppModule {}

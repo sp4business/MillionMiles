@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+  	<ion-back-button defaultHref=""></ion-back-button>
+    <ion-title>auto-location</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<div>
+		<ion-list *ngIf = "showFix">
+			<ion-item>
+				<ion-grid>
+					<ion-row (click) = "presentEngineHealth()">
+						<ion-col size = "2"><ion-icon name="heart-empty"></ion-icon></ion-col>
+						<ion-col>Engine health <br>high severity - 3 medium severity - 2</ion-col>
+					</ion-row>
+				</ion-grid>
+			</ion-item>
+			<ion-item>
+				<ion-grid>
+					<ion-row (click) = "presentRPM()">
+						<ion-col size = "2"><ion-icon name="rocket"></ion-icon></ion-col>
+						<ion-col>RPM <br>medium severity - 2</ion-col>
+					</ion-row>
+				</ion-grid>
+			</ion-item>
+			<ion-item>
+				<ion-grid>
+					<ion-row (click) = "presentOil()">
+						<ion-col size = "2"><ion-icon name="bonfire"></ion-icon></ion-col>
+						<ion-col>Oil Health<br>low severity - 1</ion-col>
+					</ion-row>
+				</ion-grid>
+			</ion-item>
+			<ion-item>
+				<ion-grid>
+					<ion-row (click) = "presentPerformance()">
+						<ion-col size = "2"><ion-icon name="fitness"></ion-icon></ion-col>
+						<ion-col>Performance <br>low severity - 3</ion-col>
+					</ion-row>
+				</ion-grid>
+			</ion-item>
+			<ion-item>
+				<ion-grid>
+					<ion-row (click) = "presentElectronics()">
+						<ion-col size = "2"><ion-icon name="phone-portrait"></ion-icon></ion-col>
+						<ion-col>Electronics <br>2 medium severity </ion-col>
+					</ion-row>
+				</ion-grid>
+			</ion-item>
+			<ion-item>
+				<ion-grid>
+					<ion-row (click) = "presentControls()">
+						<ion-col size = "2"><ion-icon name="pause"></ion-icon></ion-col>
+						<ion-col>Controls <br>high severity - 1</ion-col>
+					</ion-row>
+				</ion-grid>
+			</ion-item>
+		</ion-list>
+	</div>
+</ion-content>
