@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Honda Insight
+      BMW 4 Series
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -22,7 +22,7 @@
 	</mwl-gauge>
 	<img src = "../../assets/images/bmw.jpg" *ngIf = "!showFix">
 		<ion-grid>
-				<ion-col *ngIf = "showDiag"><ion-button (click) = "launchFix()">run diagnostic</ion-button></ion-col>
+				<ion-col *ngIf = "showDiag"><ion-button (click) = "launchFix()">Run Diagnostic</ion-button></ion-col>
 				<ion-col *ngIf = "showSpin"><ion-spinner></ion-spinner></ion-col>
 				<ion-col *ngIf = "showFix"><ion-button (click) = "presentAutoLocation()">Repair Location</ion-button></ion-col>
 		</ion-grid>
