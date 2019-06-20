@@ -10,8 +10,8 @@
 	<div class = "car-descrip">
 		<ion-grid>
 			<ion-row>
-				<ion-col>Last checked: <b>4 hrs ago</b></ion-col>
-				<ion-col>Next Auto Check: <b>In 8hrs</b></ion-col>
+				<ion-col>Last checked: <b>2 Days Ago</b></ion-col>
+				<ion-col>Next Auto Check: <b>In 20 Days</b></ion-col>
 			</ion-row>
 		</ion-grid>
 		<img src = "../assets/images/honda-insight.png">
@@ -29,7 +29,8 @@
 				<ion-grid>
 					<ion-row (click) = "presentEngineHealth()">
 						<ion-col size = "2"><ion-icon name="heart-empty"></ion-icon></ion-col>
-						<ion-col>Engine health <br>high severity - 3 medium severity - 2</ion-col>
+						<ion-col padding>Engine health </ion-col>
+						<ion-icon name="close-circle" padding color="danger"></ion-icon>
 					</ion-row>
 				</ion-grid>
 			</ion-item>
@@ -37,7 +38,8 @@
 				<ion-grid>
 					<ion-row (click) = "presentRPM()">
 						<ion-col size = "2"><ion-icon name="rocket"></ion-icon></ion-col>
-						<ion-col>RPM <br>medium severity - 2</ion-col>
+						<ion-col padding>RPM </ion-col>
+						<ion-icon name="warning" padding color="warning"></ion-icon>
 					</ion-row>
 				</ion-grid>
 			</ion-item>
@@ -45,7 +47,8 @@
 				<ion-grid>
 					<ion-row (click) = "presentOil()">
 						<ion-col size = "2"><ion-icon name="bonfire"></ion-icon></ion-col>
-						<ion-col>Oil Health<br>low severity - 1</ion-col>
+						<ion-col padding>Oil Health</ion-col>
+						<ion-icon name="checkmark-circle" padding color="success"></ion-icon>
 					</ion-row>
 				</ion-grid>
 			</ion-item>
@@ -53,7 +56,8 @@
 				<ion-grid>
 					<ion-row (click) = "presentPerformance()">
 						<ion-col size = "2"><ion-icon name="fitness"></ion-icon></ion-col>
-						<ion-col>Performance <br>low severity - 3</ion-col>
+						<ion-col padding>Performance</ion-col>
+						<ion-icon name="warning" padding color="warning"></ion-icon>
 					</ion-row>
 				</ion-grid>
 			</ion-item>
@@ -61,7 +65,8 @@
 				<ion-grid>
 					<ion-row (click) = "presentElectronics()">
 						<ion-col size = "2"><ion-icon name="phone-portrait"></ion-icon></ion-col>
-						<ion-col>Electronics <br>2 medium severity </ion-col>
+						<ion-col padding>Electronics</ion-col>
+						<ion-icon name="checkmark-circle" padding color="success"></ion-icon>
 					</ion-row>
 				</ion-grid>
 			</ion-item>
@@ -69,7 +74,8 @@
 				<ion-grid>
 					<ion-row (click) = "presentControls()">
 						<ion-col size = "2"><ion-icon name="pause"></ion-icon></ion-col>
-						<ion-col>Controls <br>high severity - 1</ion-col>
+						<ion-col padding>Controls </ion-col>
+						<ion-icon name="checkmark-circle" padding color="success"></ion-icon>
 					</ion-row>
 				</ion-grid>
 			</ion-item>
