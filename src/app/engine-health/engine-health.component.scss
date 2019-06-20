@@ -1,7 +1,7 @@
 ion-card-header{
 	background-color: #F0AB00;
     border-bottom-left-radius: 2rem;
-    color:white;
+    color:black;
 }
 ion-content{
 	--background: #222428;
@@ -31,3 +31,14 @@ ion-button{
 .list-md{
 	background:#a7adba;
 }
+ion-button {
+ 
+
+	--background: #F0AB00;
+   
+	color: #222428;
+   
+	font-weight: bold;
+	
+   
+   }
