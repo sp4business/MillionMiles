@@ -23,7 +23,7 @@
 	<img src = "../../assets/images/bmw.jpg" *ngIf = "!showFix">
 		<ion-grid>
 				<ion-col *ngIf = "showDiag"><ion-button (click) = "launchFix()">Run Diagnostic</ion-button></ion-col>
-				<ion-col *ngIf = "showSpin"><ion-spinner></ion-spinner></ion-col>
+				<ion-col *ngIf = "showSpin"><ion-spinner style = "color:white;"></ion-spinner></ion-col>
 				<ion-col *ngIf = "showFix"><ion-button (click) = "presentAutoLocation()">Repair Location</ion-button></ion-col>
 		</ion-grid>
 	</div>
