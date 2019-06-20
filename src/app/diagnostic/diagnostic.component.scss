@@ -1,3 +1,50 @@
 .buttonClass{
-    text-align: center   
+    text-align: center;
+    color: #222428;
+}
+
+ion-title {
+    
+    color: #F0AB00;
+}
+
+ion-button {
+
+    --background: #F0AB00;
+    color: #222428;
+    font-weight: bold;
+
+}
+
+ion-content{
+	ion-card-title{
+	text-align: center;
+	color: #F0AB00 !important;
+	}
+	ion-card-content{
+		text-align: center;
+		// text-shadow: 1px 1px 10px #f9f9e5 !important;
+		color: #f9f9f2 !important;
+	}
+	--background: #222428;
+}
+
+ion-toolbar{
+	--background: black;
+	// text-shadow: 1px 1px 10px #f2f771 !important;
+	color: white !important;
+}
+
+ion-item {
+    --background: #222428;
+    color: #f9f9f2;
+}
+
+ion-list-header{
+	// text-shadow: 1px 1px 10px #f2f771 !important;
+	color: white!important;
+	font-size: 11pt;
+	--background: #222428;
+	border-bottom: 1px solid #F0AB00;
+	border-top: 1px solid #F0AB00;
 }

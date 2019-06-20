@@ -34,12 +34,12 @@ ion-content{
 		text-shadow: 1px 1px 10px #f9f9e5 !important;
 		color: #f9f9f2 !important;
 	}
-	--background: #4f5b66;
+	--background: #222428;
 }
 ion-toolbar{
-	--background: #343d46;
+	--background: black;
 	// text-shadow: 1px 1px 10px #f2f771 !important;
-	color: #fafcc4 !important;
+	color: white !important;
 }
 ion-list-header{
 	text-shadow: 1px 1px 10px #f2f771 !important;
@@ -47,7 +47,7 @@ ion-list-header{
 	--background: #343d46;
 }
 ion-item{
-	--background: #65737e;
+	--background: black;
 	color: #f9f9f2 !important;
 }
 ion-card{

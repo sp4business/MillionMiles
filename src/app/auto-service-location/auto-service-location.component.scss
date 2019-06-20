@@ -1,7 +1,7 @@
 ion-toolbar{
-	--background: #343d46;
+	--background: black;
 	// text-shadow: 1px 1px 10px #f2f771 !important;
-	color: #fafcc4 !important;
+	color: #F0AB00 !important;
 }
 
 .dashboard{
@@ -19,24 +19,24 @@ ion-toolbar{
 	}
 
 	ion-card-header{
-	background-color: #4f5b66;
+	background-color: #F0AB00;
     border-bottom-left-radius: 2rem;
-    color:white;
+    color:black;
 }
 ion-content{
-	--background: 	#343d46 !important;
+	--background: #222428 !important;
 }
 ion-card{
-	--background: #65737e !important;
+	--background: black !important;
 }
 ion-card-header{
 	border-bottom-right-radius: 2rem;
 }
 
 ion-toolbar{
-	--background: #343d46;
+	--background: black;
 	// text-shadow: 1px 1px 10px #f2f771 !important;
-	color: #fafcc4 !important;
+	color:white !important;
 }
 ion-card-content{
 	color:white;
