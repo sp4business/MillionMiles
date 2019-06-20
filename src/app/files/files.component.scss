@@ -29,8 +29,12 @@ ion-toolbar{
 	// text-shadow: 1px 1px 10px #f2f771 !important;
 	color: #F0AB00 !important;
 }
-ion-button{
-	--background: transparent;
+ion-button {
+
+    --background: #F0AB00;
+    color: #222428;
+    font-weight: bold;
+
 }
 .button-solid{
 	--background-activated:#F0AB00;

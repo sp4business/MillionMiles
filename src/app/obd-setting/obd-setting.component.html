@@ -6,6 +6,7 @@
       <ion-title>
         Enter Your Car Information
       </ion-title>
+      <ion-button (click) = "presentToast()" slot="end" >Save</ion-button>
     </ion-toolbar>
   </ion-header>
   <ion-content>
@@ -15,11 +16,20 @@
             <ion-select placeholder="Select One">
               <ion-select-option value="Toyota">Toyota</ion-select-option>
               <ion-select-option value="Honda">Honda</ion-select-option>
+              <ion-select-option value="BMW">BMW</ion-select-option>
             </ion-select>
           </ion-item>
       <ion-item>
           <ion-label>Car Model</ion-label>
-          <ion-input placeholder ="Model" text-right></ion-input>
+            <ion-select placeholder="Select One">
+                <ion-select-option value=""></ion-select-option>
+                <ion-select-option value="3 series">3 series</ion-select-option>
+                <ion-select-option value="4 series">4 series</ion-select-option>
+                <ion-select-option value="5 series">4 series</ion-select-option>
+                <ion-select-option value="M3">M3</ion-select-option>
+                <ion-select-option value="M4">M4</ion-select-option>
+                <ion-select-option value="M5">M5</ion-select-option>
+            </ion-select>
         </ion-item>
         <ion-item>
             <ion-label>Year</ion-label>
