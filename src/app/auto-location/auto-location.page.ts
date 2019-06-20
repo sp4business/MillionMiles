@@ -11,10 +11,6 @@ export class AutoLocationPage implements OnInit {
 
   ngOnInit() {
   }
-
   
-   dismiss(){
-  		this.modalCtrl.dismiss();
-  	}
 
 }
