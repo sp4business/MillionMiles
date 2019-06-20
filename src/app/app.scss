@@ -8,3 +8,38 @@ ion-content{
   background-color:   #343d46;
   background: #343d46;
 }
+
+mwl-gauge > .gauge > .dial {
+
+  stroke: #eee;
+  stroke-width: 2;
+  fill: rgba(0,0,0,0);
+
+}
+
+mwl-gauge {
+
+  width: 275px;
+  height: 275px;
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+
+}
+
+mwl-gauge > .gauge > .value {
+
+  stroke: rgb(234,255,47);
+  stroke-width: 8;
+  fill: rgba(0,0,0,0);
+
+}
+
+mwl-gauge > .gauge > .value-text {
+
+  fill: rgb(211, 211, 211);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+
+}
