@@ -24,7 +24,7 @@
 		<ion-grid>
 				<ion-col *ngIf = "showDiag"><ion-button (click) = "launchFix()">run diagnostic</ion-button></ion-col>
 				<ion-col *ngIf = "showSpin"><ion-spinner></ion-spinner></ion-col>
-<!-- 				<ion-col *ngIf = "showFix"><ion-button>fix them now</ion-button></ion-col> -->
+				<ion-col *ngIf = "showFix"><ion-button (click) = "presentAutoLocation()">Repair Location</ion-button></ion-col>
 		</ion-grid>
 	</div>
 	<div>

@@ -7,7 +7,7 @@ import { OilHealthComponent} from '../oil-health/oil-health.component';
 import { ElectronicsComponent} from '../electronics/electronics.component';
 import { ControlsComponent} from '../controls/controls.component';
 import {PerformanceComponent} from '../performance/performance.component';
-
+import {AutoServiceLocationComponent} from '../auto-service-location/auto-service-location.component'
 @Component({
   selector: 'app-tab3',
   templateUrl: 'tab3.page.html',
@@ -76,4 +76,13 @@ export class Tab3Page {
   		this.showSpin = false
   	}, 3000)
   }
+
+  async presentAutoLocation() {
+  	const benefitModal = await this.modalCtrl.create({
+  		component: AutoServiceLocationComponent,
+  		componentProps: {test: 123},
+  	});
+  	return await benefitModal.present();
+  }
+  
 }
